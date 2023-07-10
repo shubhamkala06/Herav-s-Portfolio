@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="assets/images/avatar-5.jpg"
+              alt="Shubham Kumar"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Jagriti Verma">Shubham Kumar</h1>
+
+            <p class="title">Blockchain Developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:richard@example.com" class="contact-link"
+                  >shubhamkumar17629@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+12133522795" class="contact-link"
+                  >+91 9315568845</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">March 31, 2002</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>New Delhi, India</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/shubham-kumar-6aa59a21a/"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://twitter.com/Shubham11o?t=DGFsG9i4WTKe9UHXegyqVg&s=09"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://github.com/Shubham1769"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I am a skilled Blockchain Developer and Researcher, passionate
+              about advancing blockchain technology. My expertise lies in
+              developing decentralized applications and conducting in-depth
+              research.
+            </p>
+
+            <p>
+              In development, I specialize in Ethereum, polygon platforms. I
+              excel in smart contract development using Solidity, Truffle, and
+              Web3.js, with a focus on security and scalability.
+            </p>
+            As a researcher, I explore blockchain protocols, consensus
+            mechanisms, zero knowledge proof and privacy techniques.
+            <p></p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Smart Contract Development
+                  </h4>
+
+                  <p class="service-item-text">
+                    I specialize in creating Solidity smart contracts
+                    specifically tailored for the Ethereum and Polygon
+                    blockchains. Our expertise lies in developing secure and
+                    efficient contracts to meet the specific needs of these
+                    blockchain platforms.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+
+                  <p class="service-item-text">
+                    Integrate blockchain into web applications, connecting the
+                    front-end and back-end. Services include web interface to
+                    blockchain network connection, wallet integrations, and
+                    smart contract interaction.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Researcher</h4>
+
+                  <p class="service-item-text">
+                    I explore blockchain protocols, consensus mechanisms, zero
+                    knowledge proof and privacy techniques.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-photo.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">UI/UX</h4>
+
+                  <p class="service-item-text">
+                    I am a UI/ux designer and am familiar with the Figma tool; I
+                    have used it to create a variety of websites.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials
+        -->
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Position of Responsibilities</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Non-Technical Lead <br />5irechain Delhi NCR
+                  </h4>
+
+                  <div class="testimonials-text-main" style="color: white;" data-testimonials-text>
+                    
+                      I organised workshops, hosted Twitter Spaces sessions,
+                      mentored and judged blockchain track hackathons and
+                      delivered sessions on blockchain technology.
+                      My role aimed to foster community engagement, promote
+                      5irechain, and guide students and developers.
+                    
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Founding President<br />Web3 Build NSUT
+                  </h4>
+
+                  <div class="testimonials-text-main" style="color: white;" data-testimonials-text>
+                    <p>
+                      Established and leading an innovative organization
+                      dedicated to driving the adoption and development of Web3
+                      technologies.<br />Responsible for vision, team building,
+                      strategic initiatives
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Executive Committee Member<br />TEDx NSUT
+                  </h4>
+
+                  <div class="testimonials-text-main" style="color: white;" data-testimonials-text>
+                    <p>
+                      Successfully managed the event and managed a footfall of
+                      500 students. Worked with full determination and
+                      effeciently in the stage design team and PR team.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Executive Committee Member<br />Tatsam NSUT
+                  </h4>
+
+                  <div class="testimonials-text-main" style="color: white;" data-testimonials-text>
+                    <p>
+                      Conducted several events and managed a footfall of 1,000
+                      students. Worked in the Sponsorship Team with full
+                      dedication towards my work.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Campus Lead<br />Open Community of Developers
+                  </h4>
+
+                  <div class="testimonials-text-main" style="color: white;" data-testimonials-text>
+                    <p>
+                      Nurturing a strong community of developers, organizing
+                      events and initiatives, and facilitating knowledge sharing
+                      and collaboration.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2021-06-14">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--
+          - clients
+        -->
+
+          <section class="clients">
+            <h3 class="h3 clients-title"></h3>
+
+            <ul class="clients-list has-scrollbar"></ul>
+          </section>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Netaji Subhas University of Technology
+                </h4>
+
+                <span>2020 — 2024</span>
+
+                <p class="timeline-text">
+                  B.Tech in Information Technology, Specilization in Network
+                  Security
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Kendriya Vidyalaya</h4>
+
+                <span>2019 — 2020</span>
+
+                <p class="timeline-text">High School class (XII)</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Kendriya Vidyalaya</h4>
+
+                <span>2002 — 2004</span>
+
+                <p class="timeline-text">Class X</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience/Internship</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  SMART CONTARCT DEVELOPER AND PROTOCOL RESEARCHER
+                </h4>
+
+                <span>Jan 2023 - Present</span>
+
+                <p class="timeline-text">Company: WEU Foundation</p>
+                <p class="timeline-text">
+                  • Design and develop smart contracts using Solidity, Conduct
+                  comprehensive research on existing blockchain protocols and
+                  frameworks.<br />
+                  • Had a leadership role as a blockchain developer, leading a
+                  team. Our main project involved implementing a zero-knowledge
+                  proof identity solution.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  CONTRIBUTOR 
+                </h4>
+
+                <span>May 2023 – Present</span>
+
+                <p class="timeline-text">Company: Timechain Summer of Code</p>
+                <p class="timeline-text">
+                  • As a top contributor at TSOC, I work on the microcredentials project with a team of 5.<br/>
+                  • We follow a structured approach, including white paper creation, UI/UX design, and coding. <br/>
+                  • I primarily focus on developing smart contracts and backend functionality, with some involvement in frontend development. Our goal is to create a solution used by major EdTech companies like Udemy.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  WEB 3 AND BLOCKCHAIN RESEARCHER INTERN
+                </h4>
+
+                <span>Oct 2022 – April 2023</span>
+
+                <p class="timeline-text">Company: EJY Health</p>
+                <p class="timeline-text">
+                  • Works with CEO office , Perform various tasks for the
+                  organisation, which includes conducting research and analysing
+                  data to develop workable business and product strategies.<br />
+                  • assisting team in research documenting and developing
+                  strategies to improve productivity.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Achievements</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  HackNsut 2023 Winner
+                </h4>
+
+                <span>Netaji Subhas University of Technology, New Delhi</span>
+
+                <p class="timeline-text">
+                  B.Tech in Information Technology, Specilization in Network
+                  Security
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Top Contributor</h4>
+
+                <span>TimeChain Summer of Code</span>
+
+                <p class="timeline-text">Class X</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Top 10 at TSEC hackathon</h4>
+
+                <span>Thadomal College of Engineering, Mumbai</span>
+
+                <p class="timeline-text">High School class (XII)</p>
+              </li>
+
+              
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My Programming skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Python</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Solidity</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">C++</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">HTML/CSS</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">JavaScript</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">Miscellaneous skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Ganache</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Remix</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Hardhat</h5>
+                  <data value="60">60%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Truffle</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Zero-knowledge Proof</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/Shubham1769/fund-easy" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-1.jpeg"
+                      alt="Fund Easy"
+                      height="100"
+                      width="170"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Fund Easy</h3>
+
+                  <p class="project-category"></p>
+                  <span class="project-category">Project</span>
+                  <br/>
+                  
+
+                  <p class="project-category">
+                    t’s a full stack finance Decentralised application based on
+                    ethereum blockchain whose functionality is to create will.
+                    The recipient’s wallet address, the amount to be donated,
+                    and a date must be provided by the person. When the deadline
+                    has passed and the user has not logged in again, they are
+                    deemed deceased, and the money is automatically transmitted.
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/Shubham1769/Easy-Care" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-2.jpeg"
+                      alt="Easy-Care"
+                      height="80"
+                      width="120"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Easy Care</h3>
+
+                  <p class="project-category"></p>
+                  <span class="project-category">Project</span>
+                  <br/>
+                  <p class="project-category">
+                     t’s a full stack finance Decentralised application based on
+                    ethereum blockchain that store electronic health records (EHRs) of
+                    patients. It allows patients to own and control their health
+                    data, as well as grant access to healthcare providers or
+                    other authorized parties.
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/Shubham1769/ERC-20-token" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./assets/images/project-3.jpg" alt="ERC-20" height="80"
+                      width="120" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">ERC-20 Token</h3>
+                   <p class="project-category">
+                    Smart Contract
+                  </p>
+                  <br/>
+                  <p class="project-category">
+                    This ERC20 token contract allows users to create and manage fixed-supply tokens on Ethereum. It includes functions for balance checks, token transfers, approval of transfers on behalf of others, and querying transfer allowances. Following the ERC20 standard, it ensures consistent and interoperable token functionality for DApps and exchanges.
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://github.com/Shubham1769/ERC-721-Token-" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-4.jpg"
+                      alt="ER-721"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">ERC-721 Token</h3>
+
+                  <p class="project-category">Smart Contract</p>
+                  <br/>
+                  <p class="project-category">
+                    This ERC721 token contract manages unique non-fungible tokens (NFTs) on Ethereum. Tokens have distinct ownership, identified by a unique ID, and can be transferred. The contract supports balance checks, ownership verification, token transfers, approvals, operator approvals, minting new tokens, and metadata retrieval. It follows the ERC721 standard, widely used for unique digital assets on DApps and marketplaces.
+                  </p>
+                </a>
+              </li>
+               <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://github.com/Shubham1769/FundingProject">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-5.jpg"
+                      alt="Funder"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Funder</h3>
+
+                  <p class="project-category">Projects</p>
+                  <br/>
+                  <p class="project-category">
+                   The "Funder" is a full-stack dApp with a smart contract and frontend interface. It enables multiple funders to transfer and withdraw funds. Using mappings, it tracks funders and their addresses. The frontend allows funders to transfer funds with `transfer` and withdraw up to 2 Ether using `withdraw`. This dApp provides a user-friendly platform for secure fund management on the blockchain.
+                  </p>
+                </a>
+              </li>
+               <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://github.com/Shubham1769/lottery/blob/main/lottery.sol" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-6.jpg"
+                      alt="Lottery"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Lottery Smart Contract</h3>
+
+                  <p class="project-category">Smart Contract</p>
+                  <br/>
+                  <p class="project-category">
+                    This is a simple lottery contract implemented in Solidity. The contract allows players to participate by sending 1 ether to the contract address. The manager, who deployed the contract, can initiate the winner selection process when there are at least three players. The winner is chosen randomly using a hash of block difficulty, timestamp, and the number of players. The contract transfers the entire contract balance to the winner and resets the list of players for the next round.
+                  </p>
+                </a>
+              </li>
+
+               <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://github.com/Shubham1769/blockchain-code/blob/main/copy.py" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-7.jpg"
+                      alt="Blockchain"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">My Blockchain</h3>
+
+                  <p class="project-category">Smart Contract</p>
+                  <br/>
+                  <p class="project-category">
+                    This is a simple implementation of a blockchain using Flask, a Python web framework. The blockchain consists of a series of blocks, where each block contains data such as owner and registration number. The blocks are linked together using cryptographic hashes and proof-of-work algorithm is used to mine new blocks. The web app provides endpoints to retrieve the full blockchain, check the validity of the blockchain, and mine new blocks by adding records to the ledger.
+                  </p>
+                </a>
+              </li>
+
+               <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://github.com/Shubham1769/CROWD-FUNDING/blob/main/crowdfunding.sol" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-8.jpg"
+                      alt="ER-721"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Crowd Funding</h3>
+
+                  <p class="project-category">Smart Contract</p>
+                  <br/>
+                  <p class="project-category">
+                    This crowdfunding smart contract in Solidity enables contributors to send ether within a deadline and minimum contribution. It tracks the raised amount, contributors, and target. The manager can create payment requests requiring majority approval. If the target is met and approved, the contract transfers funds to the recipient. If the target isn't met, contributors can request refunds.
+                  </p>
+                </a>
+              </li>
+
+               <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://github.com/Shubham1769/code.py/blob/main/code.py" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-9.jpg"
+                      alt="Ledger"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Ledger</h3>
+
+                  <p class="project-category">Project</p>
+                  <br/>
+                  <p class="project-category">
+                   This code implements a basic blockchain structure using Python, with a `Block` class representing individual blocks and a `Blockchain` class managing the chain. It demonstrates how blocks are linked together through hash values and showcases the addition of new blocks to the chain.
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a
+                  href="https://medium.com/@insights.blockchain3/introduction-to-web3-de23a021dd54"
+                  target="_blank"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.png"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category"></p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">July 05, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Introduction to web3</h3>
+
+                    <p class="blog-text">
+                      Unveiling the Next Generation of the Internet Blockchain
+                      Insights
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+          <div class="m-7">
+        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+          <input type="hidden" name="access_key" value="d77c5657-8a40-43d3-9b04-18218e56424f" />
+          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+          <input type="checkbox" name="botcheck" id="" style="display: none;" />
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+               <a href="index.html"> <span>Send Message</span></a>
+              </button>
+            </form>
+          </form>
+          </div>
+          </section>
+        </article>
+      </div>
+     
+      
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
