@@ -165,7 +165,7 @@ html {
 }
 
 body {
-  background: var(--smoky-black);
+  background: rgb(255, 150, 211);                                  /*696*/
 }
 
 /*-----------------------------------*\
@@ -174,7 +174,7 @@ body {
 
 .sidebar,
 article {
-  background: var(--eerie-black-2);
+  background: rgb(175, 58, 140);                                    /*696*/
   border: 1px solid var(--jet);
   border-radius: 20px;
   padding: 15px;
@@ -481,7 +481,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: rgb(141, 0, 99);                   /*696*/
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -552,7 +552,7 @@ main {
 
 .service-item {
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: var(--border-gradient-onyx);                   /*696*/
   padding: 20px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
@@ -563,7 +563,7 @@ main {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--bg-gradient-jet);
+  background: inherit;
   border-radius: inherit;
   z-index: -1;
 }
