@@ -1,14 +1,3 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
   /**
@@ -165,7 +154,7 @@ html {
 }
 
 body {
-  background: rgb(255, 150, 211);                                  /*696*/
+  background: var(--smoky-black);
 }
 
 /*-----------------------------------*\
@@ -174,7 +163,7 @@ body {
 
 .sidebar,
 article {
-  background: rgb(175, 58, 140);                                    /*696*/
+  background: var(--border-gradient-onyx) ;                                    /*696*/
   border: 1px solid var(--jet);
   border-radius: 20px;
   padding: 15px;
@@ -481,7 +470,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgb(141, 0, 99);                   /*696*/
+  background: var(--bg-gradient-onyx);                   /*696*/
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -552,7 +541,7 @@ main {
 
 .service-item {
   position: relative;
-  background: var(--border-gradient-onyx);                   /*696*/
+  background: var(--bg-gradient-yellow-2);                   /*696*/
   padding: 20px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
@@ -622,15 +611,6 @@ main {
   scroll-snap-align: center;
 }
 
-.testimonials-avatar-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(15px, -25px);
-  background: var(--bg-gradient-onyx);
-  border-radius: 14px;
-  box-shadow: var(--shadow-1);
-}
 
 .testimonials-item-title {
   margin-bottom: 7px;
@@ -771,43 +751,6 @@ main {
   line-height: 1.6;
 }
 
-/**
- * #clients 
- */
-
-.clients {
-  margin-bottom: 15px;
-}
-
-.clients-list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 15px;
-  margin: 0 -15px;
-  padding: 25px;
-  padding-bottom: 25px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 25px;
-}
-
-.clients-item {
-  min-width: 50%;
-  scroll-snap-align: start;
-}
-
-.clients-item img {
-  width: 100%;
-  filter: grayscale(1);
-  transition: var(--transition-1);
-}
-
-.clients-item img:hover {
-  filter: grayscale(0);
-}
 
 /*-----------------------------------*\
   #RESUME
@@ -1332,13 +1275,6 @@ textarea.form-input::-webkit-resizer {
  */
 
 @media (min-width: 450px) {
-  /**
-   * client
-   */
-
-  .clients-item {
-    min-width: calc(33.33% - 10px);
-  }
 
   /**
    * #PORTFOLIO, BLOG 
@@ -1491,6 +1427,11 @@ textarea.form-input::-webkit-resizer {
    * #ABOUT
    */
 
+
+  .about{
+    background: var(--border-gradient-onyx);
+  } 
+
   .about .article-title {
     margin-bottom: 20px;
   }
@@ -1547,7 +1488,6 @@ textarea.form-input::-webkit-resizer {
 
   .testimonials-item-title {
     margin-bottom: 10px;
-    margin-left: 95px;
   }
 
   .testimonials-text {
@@ -1591,18 +1531,6 @@ textarea.form-input::-webkit-resizer {
     width: 35px;
   }
 
-  /* clients */
-
-  .clients-list {
-    gap: 50px;
-    margin: 0 -30px;
-    padding: 45px;
-    scroll-padding-inline: 45px;
-  }
-
-  .clients-item {
-    min-width: calc(33.33% - 35px);
-  }
 
   /**
    * #RESUME
